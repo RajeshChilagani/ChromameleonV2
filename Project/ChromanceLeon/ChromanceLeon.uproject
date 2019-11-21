@@ -4,6 +4,16 @@
 	"Category": "",
 	"Description": "",
 	"Enterprise": true,
+	"Modules": [
+		{
+			"Name": "ChromanceLeon",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "HoudiniEngine",
