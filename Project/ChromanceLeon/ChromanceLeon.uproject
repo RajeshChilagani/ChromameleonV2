@@ -4,11 +4,17 @@
 	"Category": "",
 	"Description": "",
 	"Enterprise": true,
-	"Plugins": [
+	"Modules": [
 		{
-			"Name": "HoudiniEngine",
-			"Enabled": true
-		},
+			"Name": "ChromanceLeon",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
 		{
 			"Name": "TwitchIntegrator",
 			"Enabled": true,
