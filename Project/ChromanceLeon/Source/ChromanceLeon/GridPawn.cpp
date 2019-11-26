@@ -17,12 +17,12 @@ AGridPawn::AGridPawn()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	RootComponent = Root;
 
-	UCameraComponent* camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	//UCameraComponent* camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	meshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 
-	camera->SetupAttachment(RootComponent);
+	/*camera->SetupAttachment(RootComponent);
 	camera->SetRelativeLocation(FVector(-250.0f, 0.0f, 250.0f));
-	camera->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
+	camera->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));*/
 
 	meshComponent->SetupAttachment(RootComponent);
 	float scale = 100.0f;
